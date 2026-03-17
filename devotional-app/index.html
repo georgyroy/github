@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Grace</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="cross">&#10010;</span>
+          <span class="logo-text">Daily Grace</span>
+        </div>
+        <p class="date" id="today-date"></p>
+      </div>
+    </header>
+
+    <!-- Tab Navigation -->
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="prayer" role="tab" aria-selected="true">Prayer of the Day</button>
+      <button class="tab" data-tab="scripture" role="tab" aria-selected="false">Scripture</button>
+      <button class="tab" data-tab="requests" role="tab" aria-selected="false">Prayer Requests</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <!-- Prayer of the Day -->
+      <section id="tab-prayer" class="tab-panel active" role="tabpanel">
+        <div class="card">
+          <div class="card-eyebrow">Morning Prayer</div>
+          <h2 class="card-title" id="prayer-title"></h2>
+          <div class="divider"></div>
+          <p class="prayer-text" id="prayer-text"></p>
+          <div class="card-footer">
+            <button class="btn-icon" id="prev-prayer" aria-label="Previous prayer">&#8592;</button>
+            <span class="prayer-counter" id="prayer-counter"></span>
+            <button class="btn-icon" id="next-prayer" aria-label="Next prayer">&#8594;</button>
+          </div>
+        </div>
+
+        <div class="card reflection-card">
+          <div class="card-eyebrow">Reflection</div>
+          <p class="reflection-text" id="reflection-text"></p>
+        </div>
+      </section>
+
+      <!-- Scripture of the Day -->
+      <section id="tab-scripture" class="tab-panel" role="tabpanel">
+        <div class="card scripture-hero">
+          <div class="card-eyebrow">Scripture of the Day</div>
+          <blockquote class="scripture-verse" id="scripture-verse"></blockquote>
+          <cite class="scripture-ref" id="scripture-ref"></cite>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Meditation</div>
+          <p class="meditation-text" id="meditation-text"></p>
+        </div>
+
+        <div class="card weekly-grid">
+          <div class="card-eyebrow">This Week&rsquo;s Verses</div>
+          <ul class="verse-list" id="verse-list"></ul>
+        </div>
+      </section>
+
+      <!-- Prayer Requests -->
+      <section id="tab-requests" class="tab-panel" role="tabpanel">
+        <div class="card">
+          <div class="card-eyebrow">New Request</div>
+          <textarea
+            id="request-input"
+            class="request-textarea"
+            placeholder="Share your prayer request&hellip;"
+            maxlength="500"
+            aria-label="Prayer request"
+          ></textarea>
+          <div class="request-meta">
+            <input
+              id="request-name"
+              class="request-name"
+              type="text"
+              placeholder="Your name (optional)"
+              maxlength="40"
+              aria-label="Your name"
+            />
+            <span class="char-count" id="char-count">500</span>
+          </div>
+          <button class="btn-primary" id="submit-request">Submit Request</button>
+        </div>
+
+        <div id="requests-list" class="requests-list"></div>
+
+        <p class="empty-state" id="empty-state" style="display:none;">
+          No prayer requests yet. Be the first to share.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" aria-live="polite"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
