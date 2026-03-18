@@ -1,0 +1,115 @@
+.pod-container {
+  padding: 0 0 2rem;
+}
+
+.pod-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.pod-icon {
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.pod-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pod-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pod-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.pod-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+  line-height: 1.3;
+}
+
+.pod-divider {
+  width: 2rem;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+  opacity: 0.6;
+}
+
+.pod-text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.pod-all-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.pod-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pod-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.pod-item--active {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+.pod-item-category {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  width: 5.5rem;
+  flex-shrink: 0;
+}
+
+.pod-item-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.pod-item--active .pod-item-title {
+  color: var(--text-primary);
+  font-weight: 500;
+}

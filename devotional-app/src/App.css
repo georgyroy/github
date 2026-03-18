@@ -1,0 +1,118 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+/* Header */
+.app-header {
+  border-bottom: 1px solid var(--border);
+  padding: 0 1.5rem;
+}
+
+.app-header-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.app-brand-cross {
+  font-size: 1.5rem;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.app-brand-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.app-brand-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+/* Nav */
+.app-nav {
+  border-bottom: 1px solid var(--border);
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.app-nav-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+}
+
+.app-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem 1.25rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.app-tab:hover {
+  color: var(--text-secondary);
+}
+
+.app-tab--active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.app-tab-icon {
+  font-size: 0.85rem;
+}
+
+.app-tab-label {
+  font-weight: 500;
+}
+
+/* Main */
+.app-main {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+
+.app-content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Footer */
+.app-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.app-footer-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+  opacity: 0.6;
+}

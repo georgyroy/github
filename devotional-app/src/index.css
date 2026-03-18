@@ -1,0 +1,73 @@
+/* Christian Devotional App — Design Tokens */
+:root {
+  --gold: #b8963e;
+  --gold-light: #d4ab5a;
+
+  --bg: #faf8f5;
+  --card-bg: #ffffff;
+  --border: #e8e2d9;
+
+  --text-primary: #1c1810;
+  --text-secondary: #4a4438;
+  --text-muted: #8a7e72;
+
+  --font-sans: 'Georgia', 'Times New Roman', serif;
+  --font-ui: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #dfc070;
+
+    --bg: #100f0d;
+    --card-bg: #1a1814;
+    --border: #2c2820;
+
+    --text-primary: #f0ece4;
+    --text-secondary: #b8b0a4;
+    --text-muted: #6e6660;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-ui);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea, button {
+  font-family: var(--font-ui);
+}

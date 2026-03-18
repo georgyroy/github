@@ -1,0 +1,156 @@
+.sod-container {
+  padding: 0 0 2rem;
+}
+
+.sod-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.sod-icon {
+  font-size: 0.9rem;
+  color: var(--gold);
+}
+
+.sod-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.sod-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sod-theme {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+.sod-verse {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  font-style: italic;
+  margin: 0 0 1.25rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.sod-quote-mark {
+  color: var(--gold);
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 0;
+  vertical-align: -0.25em;
+  opacity: 0.7;
+}
+
+.sod-reference {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.sod-reflection-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sod-reflection-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.sod-reflection-text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.sod-all-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.sod-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sod-item {
+  padding: 0.875rem 1rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.sod-item--active {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+.sod-item-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+
+.sod-item-theme {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  width: 5rem;
+  flex-shrink: 0;
+}
+
+.sod-item-ref {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.sod-item--active .sod-item-ref {
+  color: var(--text-primary);
+}
+
+.sod-item-snippet {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+  padding-left: 5.75rem;
+  line-height: 1.5;
+  font-style: italic;
+}
